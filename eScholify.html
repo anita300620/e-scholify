@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Scholify</title>
+    <link rel="stylesheet" href="eScholify.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    
+    crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    
+    crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!--header - neetu -->
+    <header>  
+        <nav class="navbar navbar-expand-lg  navbar-light bg-light">
+            <a class="navbar-brand" href="./eScholify.html">
+                <img src="Scholify.png" width="140px" height="50px" alt=""> 
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+               
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Scholarship
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="/career-planning">Find Internships</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/career-planning/featured-internships">Featured Scholarships</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/part-time-jobs">Scholarship News</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/career-planning/articles">National Scholarship Directory</a>
+                    </div>
+                  </li>
+    <!-- ================================================================================= -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Fafsa & Financial Aid
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/career-planning">FAFSA</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/career-planning/featured-internships">Financial Aid</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/part-time-jobs">FAFSA &amp; Financial Aid News</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/career-planning/articles">National Scholarship Directory</a>
+        </div>
+      </li>   
+    <!-- ========================================================================= -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Internships
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/career-planning">Find Internships</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/career-planning/featured-internships">Featured Internships</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/part-time-jobs">Part-Time Jobs</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/career-planning/articles">Internship News</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/career-planning/articles"> Online Learning</a>
+        </div>
+      </li>
+    <!-- ============================================================================== -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Educators
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/career-planning">Educator Resources</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/career-planning/featured-internships">Download Free Materials</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/part-time-jobs">Scholarship List Builder</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/career-planning/articles">Scholarship Providers</a>
+        </div>
+      </li>
+    
+    <!-- ======================================================================== -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Parents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/career-planning">Parent Resources</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/career-planning/featured-internships">FAQs</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/part-time-jobs">Parent News</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/career-planning/articles">Scholarship Providers</a>
+        </div>
+      </li>
+    </ul>
+    <!-- ====================================================================== -->
+        <ul  class='menu m1-2 flex'> 
+          <li class='nav-item show-for-medium'>
+          <a class="login-link" target="_blank" href="./LoginForm.html">log in</a>
+          </li>  
+          <button class="btn my-2 my-sm-0" type="submit"><a href="./registration.html">Sign up</a></button>
+    </li>
+    </ul>
+    </nav>
+     </div>
+    </header>
+<!-- banner section -->
+<div class="container ">
+
+    <div class="cell-fit-you">
+      <h1 class="fit-you ">
+      Easily find college scholarships that
+      <span>fit you</span>
+      </h1>
+      <p class="head-para">
+      Fastweb is a free scholarship search platform that connects students to scholarships and financial aid tools. Our goal is to help you find scholarships to make school more affordable.
+      </p>
+      <div>
+      <a class="netu-but "     aria-label="Find scholarships now" aria-describedby="fit_you" role="button" href="#">FIND SCHOLARSHIPS NOW</a>
+      </div>
+      </div>
+     </div>
+    </div>
+<!-- ===================================================================== -->
+<div class="container-xxl robotic py-5">
+    <div class="container px-lg-5">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="section-title position-relative mb-4 pb-2">
+                    <h6 class="position-relative text-primary ps-4">About Us</h6>
+                    <h2 class="mt-2">The best Scholarships platform, who gives solution with 10 years of experience</h2>
+                </div>
+                <p class="mb-4">GREAT Scholarships offer students from 14 countries the opportunity to have £10,000 towards their tuition fees for a wide range of one-year taught postgraduate courses.
+  
+                    In the 2023-24 academic year, 200 scholarships are offered by 49 universities across England, Wales, Scotland and Northern Ireland.</p>
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Award Winning</h6>
+                        <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Professional Staff</h6>
+                    </div>
+                    <div class="col-sm-6">
+                        <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>24/7 Support</h6>
+                        <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mt-4">
+                    <a class="btn btn-primary rounded-pill px-4 me-3" href="">Read More</a>
+                    <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="about.jpg">
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+<!--dashboard - shashank -->
+<div class="better">
+    <h2 class="makes_better">WHAT MAKES THE WEBSITE BETTER</h2>
+    <p class="sub-heading-text">
+        Fastweb
+     <span>
+        does the work
+     </span>
+        for you
+    </p>
+</div>
+
+<div class="choose_wrap">
+
+    <div class="choose selected" id="research">
+        <span>
+        Research Team
+        </span>
+    </div>
+
+    <div class="choose" id="algorithm">
+        <span>
+        Matching Algorithm
+        </span>
+    </div>
+
+    <div class="choose" id="experts">
+        <span>
+        Content Experts
+        </span>
+    </div>
+
+</div>
+
+
+<div class="choice_wrap">
+
+
+    <div class="choice selected" id="choice_research">
+        <div class="choice_description">
+                <h3 class="research_team">
+                Scholarship Research Team
+                </h3>
+                <p class="research">
+                What sets Fastweb apart from other college scholarship search sites is our team of researchers.  Every scholarship in our database has been researched and vetted by a team of real people.
+                </p>
+                <ul>
+                <li>
+                <i aria-label="checkmark" class="fi-check"></i>
+                You get your own team of scholarship researchers, zero cost.
+                </li>
+                <li>
+                <i aria-label="checkmark" class="fi-check"></i>
+                Each and every scholarship in our huge database has been vetted by a team of real people.
+                </li>
+                <li>
+                <i aria-label="checkmark" class="fi-check"></i>
+                Never worry about scholarship scams.
+                </li>
+                </ul>
+        </div>
+            
+        <div class="choice_image">
+            <img alt="experts image" class="expert" src="https://www.fastweb.com/assets/homepage/2022/content-experts-ef7647994809abdc834b5d0cf7d42561db86a12d63d4b18ef33fb4413a67f9cb.png">
+        </div>
+            
+    
+    
+    </div>
+</div>
+
+
+
+
+<div class="pad_width module" id="fafsa">
+    <div class="grid-container">
+        <div class="grid-item1">
+            <div class="cell small-12 large-12" id="fafsa-heading-wrapper">
+                <h2 class="leader">
+                Your FAFSA information Headquarters
+                </h2>
+                <p class="sub-heading text-center">
+                Don't forget the FAFSA
+                </p>
+            </div>
+        </div>
+        <div class="grid-item2">
+            <div class="left_column">
+                <h3 class="left_side">
+                Common FAFSA Q&amp;As + FAFSA Tools
+                </h3>
+                <p class="left">
+                FAFSA amplifies the importance of other financial aid resources like the Free Application for Federal Student Aid (FAFSA).  In addition to scholarships, the FAFSA is another key component to help students and their families pay for college.
+                </p>
+                <a class="button button_invert" aria-label="Get FAFSA Info" aria-describedby="fafsa" role="button" href="/content/fafsa">Get FAFSA info</a>
+            </div>
+            <div class="right">
+                <p class="right_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+                
+        </div>
+    </div>
+</div>
+
+<!-- dashboard - Sachin -->
+
+    <!-- scholarship story telling part -->
+  <div class="students-color">
+    <div class=" students-color">
+        <p class="students-news-p"><b>REAL SCHOLARSHIP SUCCESS STORIES</b></p>
+        <h2 class="students-news-header"><b>Scholarship Winners that use Fastweb Are Saying... </b></h2>
+    </div>
+
+    <div class="students-news students-color">        
+        <div class="card-news">
+            <img class="students-img" src="https://www.fastweb.com/packs/media/test_webp_image_format/briana-berger-6c66f8b9.webp" alt="Avatar" style="width:100%">
+            <div class="containers">              
+              <p>Apply to a lot of scholarships. You never know what a certain scholarship is looking for as the scholarship process is a whole different ballgame than college admissions. It is best to increase your probability of winning a scholarship by applying to a lot.</p> 
+              <p><b>Briana - Gainesville, FL</b></p>
+              <h4><b>$20,000 WINNER</b></h4> 
+            </div>
+        </div>
+        <div class="card-news">
+            <img class="students-img" src="https://www.fastweb.com/packs/media/test_webp_image_format/josh-w-1b24d1b3.webp" alt="Avatar" style="width:100%">
+            <div class="containers">
+                <p>Don't stop applying for scholarships just because you aren't winning initially. I had to apply to over 30 before I started seeing the dividends, but it was totally worth it!</p>
+                <p><b>Josh - Silver Spring, MD</b></p>
+                <h4><b>$10,000 WINNER</b></h4> 
+               
+            </div>
+        </div>
+        <div class="card-news">
+            <img class="students-img" src="https://www.fastweb.com/packs/media/test_webp_image_format/mariah-siner-6e7e283a.webp" alt="Avatar" style="width:100%">
+            <div class="containers"> 
+                <p>Never give up; eventually someone will give you a scholarship.</p> 
+                <p><b>Mariah - Houston, TX</b></p>
+                <h4><b>$500 WINNER</b></h4> 
+             
+            </div>
+        </div>        
+    </div>
+    <div class="students-news students-color">
+        <a class="students-news-button" href="#" >SIGN ME UP</a>
+    </div>
+</div>  
+
+    <!-- <div class="scholarship-winners">                    
+
+        <div class="scholarship-winners-section">
+            <img class="scholarship-winners-img" src="	https://www.fastweb.com/packs/media/test_webp_image_format/briana-berger-6c66f8b9.webp" alt="student image">
+            <p class="scholarship-winners-text">Apply to a lot of scholarships. You never know what a certain scholarship is looking for as the scholarship process is a whole different ballgame than college admissions. It is best to increase your probability of winning a scholarship by applying to a lot.</p>
+            <p class="scholarship-winners-area">Briana - Gainesville, FL</p>
+            <p class="scholarship-winners-rs">$20,000 WINNER</p>                
+        </div>
+
+        <div class="scholarship-winners-section">
+            <img class="scholarship-winners-img" src="https://www.fastweb.com/packs/media/test_webp_image_format/josh-w-1b24d1b3.webp" alt="student image">
+            <p class="scholarship-winners-text">Don't stop applying for scholarships just because you aren't winning initially. I had to apply to over 30 before I started seeing the dividends, but it was totally worth it!</p>
+            <p class="scholarship-winners-area">Josh - Silver Spring, MD</p>
+            <p class="scholarship-winners-rs">$10,000 WINNER</p>
+        </div>
+
+        <div class="scholarship-winners-section">
+            <img class="scholarship-winners-img" src="	https://www.fastweb.com/packs/media/test_webp_image_format/mariah-siner-6e7e283a.webp" alt="student image">
+            <p class="scholarship-winners-text">Never give up; eventually someone will give you a scholarship.</p>
+            <p class="scholarship-winners-area">Mariah - Houston, TX</p>
+            <p class="scholarship-winners-rs">$500 WINNER</p>
+        </div>
+        
+    </div> -->
+
+    
+    <!--for student - latest news -->
+    <div class="students-news">
+        <h2 class="students-news-heading"><b>Student News</b></h2>
+    </div>
+    <div class="students-news">        
+        <div class="card">
+            <img src="//www.fastweb.com/uploads/article_photo/photo/2039065/2023-scholarships-money-for-school.jpeg" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>23 Scholarships to Apply for in 2023</b></h4> 
+              <p>JANUARY 3, 2023</p> 
+            </div>
+        </div>
+        <div class="card">
+            <img src="//www.fastweb.com/uploads/article_photo/photo/2037583/Engineers_College_Major.jpeg " alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>10 College Majors with the Highest Salaries for Graduates</b></h4> 
+              <p>NOVEMBER 16, 2022</p> 
+            </div>
+        </div>
+        <div class="card">
+            <img src="//www.fastweb.com/uploads/article_photo/photo/2038950/Fastweb_Scholarship_Favorite.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4>Fastweb Scholarship Search Update: Made Easy for You</h4> 
+              <p>APRIL 9, 2022</p> 
+            </div>
+        </div>        
+    </div>
+    <div class="students-news">
+        <a class="students-news-button" href="#" >READ MORE</a>
+    </div>
+
+    <!-- <div class="students-news">
+        <div class="students-news-section1">
+                       box1 
+        </div>
+        <div class="students-news-section2">
+            box12
+        </div>
+        <div class="students-news-section3">
+            box13
+        </div>
+
+    </div> -->
+
+    
+    <!-- scholatship link -->
+
+    <div class="scholarship-link">
+        <h2 class="h2-header">Your successful scholarship search begins with E-Scholify.</h2>
+        <a class="button" href="#" >FIND SCHOLARSHIPS NOW</a>
+    </div>
+
+
+    
+    <!-- footer -->
+    <footer >      
+        
+        <div class="main-footer">
+            <!-- <div></div> -->
+            <div class="main-footer-items">
+                    <img class="main-footer-image" src="//www.fastweb.com/uploads/article_photo/photo/2037968/african-american-article_1270x847.png">                    
+                    <div class="main-footer-article">SCHOLARSHIP</div>
+                    <h3 class="main-footer-heading">College Scholarships for African American Students</h3>
+                    <p class="main-footer-para">These scholarships for Black students total more than $450,000!</p>
+                                
+            </div>
+            <div class="main-footer-items">
+                <h3>Popular</h3>
+                <!-- <hr size="1" width="90%" color="#00334c"> -->
+                <ul class="main-footer-ul">
+                    <li>
+                        <a class="main-footer-a" href="#">February is Financial Aid Awareness Month</a>
+                    </li>
+                    <hr class="main-footer-line">
+                    <li>
+                        <a class="main-footer-a" href="#">Full Tuition Scholarships</a>
+                    </li>
+                    <hr class="main-footer-line">
+                    <li>
+                        <a class="main-footer-a" href="#">15 Financial Aid Questions You Need to Ask</a>
+                    </li>
+                    <hr class="main-footer-line">
+                    <li>
+                        <a class="main-footer-a" href="#">Top Internships for Students in 2023</a>
+                    </li>
+                    <hr class="main-footer-line">
+                    <li>
+                        <a class="main-footer-a" href="#">The Goodwall App is a Gamechanger for Students</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-footer-items">
+                <h3>Latest</h3>
+                <ul class="main-footer-ul">
+                    <li><a class="main-footer-a" href="#">Top Scholarships for High School Seniors: Class of 2023</a></li>
+                    <hr class="main-footer-line">
+                    <li><a class="main-footer-a" href="#">Why Parents Should Fill Out the FAFSA</a></li>
+                    <hr class="main-footer-line">
+                    <li><a class="main-footer-a" href="#">Summer Programs for High School Students</a></li>
+                    <hr class="main-footer-line">
+                    <li><a class="main-footer-a" href="#">February is Financial Aid Awareness Month</a></li>
+                    <hr class="main-footer-line">
+                    <li><a class="main-footer-a" href="#">The Best Scholarships for High School Juniors: Class of 2024</a></li>
+                </ul>
+            </div>
+            <div class="main-footer-items">
+                <h3>Trending</h3>
+                <ul class="main-footer-ul">
+                    <li><a class="main-footer-a" href="#">15 Financial Aid Questions You Need to Ask</a></li>
+                    <hr class="main-footer-line">
+                    <li><a class="main-footer-a" href="#">HBCU Scholarships 2023</a></li>
+                    <hr class="main-footer-line">
+                    <li><a class="main-footer-a" href="#">2023 Doodle for Google Contest Totals $100K+</a></li>
+                    <hr class="main-footer-line">
+                    <li><a class="main-footer-a" href="#">Understand Your Student Aid Report</a></li>
+                </ul>
+            </div>
+            <!-- <div></div> -->
+        </div>
+
+        <div class="footer">
+            <!-- <div></div> -->
+            <div class="footer-cols">
+                <ul class="footer-cols-ul">
+                    <li class="footer-cols-logo footer-cols-header footer-cols-li">E-Scholify</li>
+                    <li class="footer-cols-li">
+                        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="20%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="20%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z"/></svg>
+                        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="20%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="20%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z"/></svg>
+                        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="20%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="20%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-193.446,81c-47.527,0 -53.487,0.201 -72.152,1.053c-18.627,0.85 -31.348,3.808 -42.48,8.135c-11.508,4.472 -21.267,10.456 -30.996,20.184c-9.729,9.729 -15.713,19.489 -20.185,30.996c-4.326,11.132 -7.284,23.853 -8.135,42.48c-0.851,18.665 -1.052,24.625 -1.052,72.152c0,47.527 0.201,53.487 1.052,72.152c0.851,18.627 3.809,31.348 8.135,42.48c4.472,11.507 10.456,21.267 20.185,30.996c9.729,9.729 19.488,15.713 30.996,20.185c11.132,4.326 23.853,7.284 42.48,8.134c18.665,0.852 24.625,1.053 72.152,1.053c47.527,0 53.487,-0.201 72.152,-1.053c18.627,-0.85 31.348,-3.808 42.48,-8.134c11.507,-4.472 21.267,-10.456 30.996,-20.185c9.729,-9.729 15.713,-19.489 20.185,-30.996c4.326,-11.132 7.284,-23.853 8.134,-42.48c0.852,-18.665 1.053,-24.625 1.053,-72.152c0,-47.527 -0.201,-53.487 -1.053,-72.152c-0.85,-18.627 -3.808,-31.348 -8.134,-42.48c-4.472,-11.507 -10.456,-21.267 -20.185,-30.996c-9.729,-9.728 -19.489,-15.712 -30.996,-20.184c-11.132,-4.327 -23.853,-7.285 -42.48,-8.135c-18.665,-0.852 -24.625,-1.053 -72.152,-1.053Zm0,31.532c46.727,0 52.262,0.178 70.715,1.02c17.062,0.779 26.328,3.63 32.495,6.025c8.169,3.175 13.998,6.968 20.122,13.091c6.124,6.124 9.916,11.954 13.091,20.122c2.396,6.167 5.247,15.433 6.025,32.495c0.842,18.453 1.021,23.988 1.021,70.715c0,46.727 -0.179,52.262 -1.021,70.715c-0.778,17.062 -3.629,26.328 -6.025,32.495c-3.175,8.169 -6.967,13.998 -13.091,20.122c-6.124,6.124 -11.953,9.916 -20.122,13.091c-6.167,2.396 -15.433,5.247 -32.495,6.025c-18.45,0.842 -23.985,1.021 -70.715,1.021c-46.73,0 -52.264,-0.179 -70.715,-1.021c-17.062,-0.778 -26.328,-3.629 -32.495,-6.025c-8.169,-3.175 -13.998,-6.967 -20.122,-13.091c-6.124,-6.124 -9.917,-11.953 -13.091,-20.122c-2.396,-6.167 -5.247,-15.433 -6.026,-32.495c-0.842,-18.453 -1.02,-23.988 -1.02,-70.715c0,-46.727 0.178,-52.262 1.02,-70.715c0.779,-17.062 3.63,-26.328 6.026,-32.495c3.174,-8.168 6.967,-13.998 13.091,-20.122c6.124,-6.123 11.953,-9.916 20.122,-13.091c6.167,-2.395 15.433,-5.246 32.495,-6.025c18.453,-0.842 23.988,-1.02 70.715,-1.02Zm0,53.603c-49.631,0 -89.865,40.234 -89.865,89.865c0,49.631 40.234,89.865 89.865,89.865c49.631,0 89.865,-40.234 89.865,-89.865c0,-49.631 -40.234,-89.865 -89.865,-89.865Zm0,148.198c-32.217,0 -58.333,-26.116 -58.333,-58.333c0,-32.217 26.116,-58.333 58.333,-58.333c32.217,0 58.333,26.116 58.333,58.333c0,32.217 -26.116,58.333 -58.333,58.333Zm114.416,-151.748c0,11.598 -9.403,20.999 -21.001,20.999c-11.597,0 -20.999,-9.401 -20.999,-20.999c0,-11.598 9.402,-21 20.999,-21c11.598,0 21.001,9.402 21.001,21Z"/></svg>
+                        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="20%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="20%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z"/></svg>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-cols">
+                
+                <ul class="footer-cols-ul">
+                    <li class="footer-cols-header footer-cols-li">QUICK LINKS</li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">Educators</a> </li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">Scholarship Winners</a></li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">FAFSA & Financial Aid</a></li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">Scholarship Directory</a></li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">Scholarships by State</a></li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">Scholarships by Major</a></li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">Scholarships by Year of Study</a></li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">Scholarships for High School Seniors</a></li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">Scholarships for College Freshmen</a></li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">Scholarships for Veterans</a></li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">Scholarships for Bilingual Students</a></li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">Scholarships for Hispanic Students</a></li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">Scholarships for African-American Students</a></li>
+                </ul>                
+            </div>
+            <div class="footer-cols">
+                
+                <ul class="footer-cols-ul">
+                    <li class="footer-cols-header footer-cols-li">COMPANY</li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">About Fastweb</a></li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">Press Room</a></li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">Advertise With Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-cols">
+                
+                <ul class="footer-cols-ul">
+                    <li class="footer-cols-header footer-cols-li">HELP</li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">FAQ</a></li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">Provider Guidelines</a></li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">Site Map</a></li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">Contact Us</a></li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">Educator Login</a></li>
+                    <li class="footer-cols-li"><a class="footer-cols-a" href="#">Volunteer</a></li>
+                </ul>
+            </div>
+            <div class="footer-cols">
+                <ul class="footer-cols-ul">
+                    <li class="footer-cols-header footer-cols-li">DOWNLOAD HERE</li>
+                    <li class="footer-cols-li">
+                        <img class="footer-cols-img" src="./app-store-png-logo-33123.png">
+                    </li>
+                </ul>
+            </div>
+            <!-- <div></div> -->
+        </div>
+        <div class="footer-end-hr">
+             <hr class="main-footer-end-line">
+        </div>
+       
+        <div class="footer-end">            
+            <!-- <div></div> -->
+            <div>
+                <span>Terms of Use </span>|
+                <span> Privacy Center </span>|
+                <span> Ad Choices </span>|
+                <span> Your Privacy Choices</span>
+            </div>
+            <!-- <div></div> -->
+        </div>
+        <div class="footer-end">
+            <!-- <div></div> -->
+            <div class="footer-end-text">
+                <span>
+                    <a href="#">Copyright © 2023</a>
+                </span>
+            </div>
+            <!-- <div></div> -->
+            
+        </div>
+        <div class="footer-end">
+            <!-- <div></div> -->
+            <div class="footer-end-image">
+                <img  src="https://privacy-policy.truste.com/privacy-seal/seal?rid=321ddc3e-c7e9-47b5-a608-04bd2b9a4e61">
+            </div>
+            <!-- <div></div> -->
+            
+        </div>
+    </footer>    
+</body>
+</html>

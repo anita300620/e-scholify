@@ -1,0 +1,298 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.signin {
+    background-color: #b2daf5;
+    
+}
+
+h3 {
+    text-align: center;
+    background-color: #020a0a;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    padding: 10px;
+    font-size: bold !important;
+    font-size: 40px;
+    color: #ede0c7;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+
+}
+
+#educator-reg-header {
+    width: 54%;
+}
+
+img {
+    width: 70%;
+}
+
+.cell {
+    width: 55%;
+    margin: 15px 0px 5px 0px;
+    /* background-color: red; */
+
+}
+
+input,
+select {
+    height: 50px;
+    width: 100%;
+    text-align: left;
+    border-radius: 5px;
+    border: 2px solid black;
+
+}
+
+option {
+    text-align: left;
+}
+
+body {
+    font-family: sofia_pro_lightregular;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0a0a0a;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header-title {
+    font-size: 2.25rem;
+    font-family: sofia_pro_boldregular;
+    color: #00334c;
+    text-align: center;
+    margin: 1.5rem 0;
+    line-height: 1.1;
+}
+
+#educator-reg-header .header-text {
+    font-size: 1rem;
+    padding: 0;
+    color: #232222;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.header-text {
+    color: #0a0a0a;
+}
+
+
+.butt {
+    margin: 8px;
+    margin-left: -1%;
+
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.swi {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.last {
+    font-size: 18px;
+    margin-top: -15px;
+    font-weight: 100;
+    text-align: left;
+    max-width: 80%;
+
+}
+
+h5 {
+    overflow: visible;
+    font-weight: 600;
+    text-align: left;
+}
+
+.check {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tnc {
+    height: 20px;
+    position: absolute;
+    left: -295px;
+
+}
+
+label[for=tnc] {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    padding-left: 27px;
+    text-align: left;
+    font-size: 18px;
+}
+
+button {
+    padding: 10px 46px !important;
+}
+
+
+@media (max-width:480px) {
+
+    .cell,
+    #educator-reg-header {
+        width: 80%;
+
+    }
+}
+
+
+@media (min-width:480px) and (max-width:767px) {
+
+    .cell,
+    #educator-reg-header {
+        width: 70%;
+
+    }
+}
+
+
+@media (min-width:768px) and (max-width:1024px) {
+
+    .cell,
+    #educator-reg-header {
+        width: 60%;
+
+    }
+
+}
+
+
+
+@media (max-width:280px) {
+    #tnc {
+        left: -25% !important;
+    }
+}
+
+@media (min-width:280px) {
+    #tnc {
+        left: -33% !important;
+    }
+}
+
+@media (min-width:400px) {
+    #tnc {
+        left: -34% !important;
+    }
+}
+
+@media (min-width:480px) {
+    #tnc {
+        left: -30% !important;
+    }
+}
+
+@media (min-width:576px) {
+    #tnc {
+        left: -167px !important;
+    }
+}
+
+@media (min-width:768px) {
+    #tnc {
+        left: -195px !important;
+    }
+}
+
+@media (min-width:992px) {
+    #tnc {
+        left: -268px !important;
+    }
+}
+
+@media (min-width:1025px) {
+    #tnc {
+        left: -244px !important;
+    }
+}
+
+@media (min-width:1200px) {
+    #tnc {
+        left: -295px !important;
+    }
+}
