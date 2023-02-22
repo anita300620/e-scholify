@@ -1,0 +1,95 @@
+.navbar{
+    background-color: aliceblue;
+    box-shadow:0 5px 4px rgba(0, 0, 0, 0.5);
+    height: 70px; 
+}
+
+.navbar .collapse .navbar-nav .nav-item  a{
+    color:  #008CBA;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    gap:1.5rem;
+    margin-top: 15px;
+}
+.flex2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin-top: 15px;
+}
+
+nav ul {
+    margin-right: 2rem; 
+}
+
+nav ul li{
+list-style: none;
+padding: 8px ;
+}
+
+nav ul button{
+    background-color:#008CBA;
+    color: aliceblue;
+}
+
+/* header{
+background-image: url('https://www.fastweb.com/packs/media/test_webp_image_format/HERO-01-6adaeaf0.webp');
+background-size: contain;
+background-repeat: no-repeat;
+height: 1120px;
+} */
+
+.cell-fit-you{
+border: 3px solid black;
+/* border: none; */
+height: 24rem;
+width: 50%;
+position: relative;
+top: 7rem;
+left: 10rem;
+color: #00334c;
+}
+
+.cell-fit-you .fit-you{
+    font-size:xxl-large;
+    font-weight:700;
+    line-height: 4rem;
+    font-size:50px;
+}
+
+.cell-fit-you .fit-you span{
+    color: #008CBA;
+}
+
+.cell-fit-you .head-para{
+    color: #232323;
+    font-size: large;
+    line-height: 30px;
+    margin: 23px 0px 16px;
+    padding: 0px 64px 32px 0px;
+    text-align: justify;
+    word-spacing: 1px;
+}
+.cell-fit-you .button{
+    background-color: #008CBA;
+    border: none;
+    color: #e7ebed;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 15px 50px;
+}
+@media screen and (min-width: 552) {
+    .cell-fit-you{
+        border: 3px solid black;
+        /* border: none; */
+        height: 24rem;
+        width: 50%;
+        color: #00334c;
+
+    }
+
+}
