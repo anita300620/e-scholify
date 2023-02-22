@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.students-news{
+    display: grid;
+    grid-template-columns: 55% 20% 20%;
+    /* background-color: #eef2f5; */
+}
+
+.scholarship-winners{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-color: #eef2f5;
+}
+.footer{
+    display: grid;
+    grid-template-columns:  18% 18% 18% 18% 18%;
+    background-color: #0660a9;
+    padding: 10px;
+    padding-left: 9%;
+    /* padding-right: 5%; */
+}
+
+/* @media only screen and (max-width:786px){
+    .footer{
+      display:flex;
+      flex-direction:column;
+    }
+  }
+   */
+.footer-end{
+    display: grid;
+    grid-template-columns: 50%;
+    background-color: #0660a9;
+    padding: 10px;
+    padding-left: 33%;
+}
+.footer-end-hr{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-color: #0660a9;
+}
+.footer-cols{
+    border: none;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.main-footer{
+    display: grid;
+    grid-template-columns:  22.5% 22.5% 22.5% 22.5% ;
+    background-color: #a4d1f6;
+    padding: 10px;
+    padding-left: 9%;
+}
+.main-footer-items{
+    border: none;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.main-footer-image{
+    width: 100%;
+    height: 185px;
+    position: relative;
+}
+.main-footer-article{
+    font-size: .8125rem;
+    font-weight: bold;
+    color: #09c;
+    padding-top: 0.5rem;
+}
+.main-footer-heading{
+    font-size: 1.3rem;
+    color: #00334c;
+    font-weight: bolder;
+}
+.main-footer-para{
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    text-rendering: optimizeLegibility;
+}
+.main-footer-ul{
+    list-style-type: none;
+    font-size: 18px;
+}
+.main-footer-items{
+    text-align: left;
+}
+.main-footer-a{
+    line-height: inherit;
+    color: #00334c;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .5s;
+}
+.main-footer-line{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    size: 1px;
+    width: 100%;
+    color: #a2a9ac;
+}
+.main-footer-end-line{
+    size: 2px;
+    width: 100%;
+    margin-left: 95%;
+    color: #031116;
+}
+.main-footer-a:hover{
+    color: #09c;
+}
+.footer-cols-ul .footer-cols-li{
+    list-style-type: none;
+    font-size: 16px;
+    text-align: left;
+}
+.footer-cols-li:first-child{
+    font-size: 20px;
+}
+.footer-cols-header{
+    margin: 0 0 0.5em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+.footer-cols-a{
+    line-height: inherit;
+    color: #eef2f5;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .5s;
+}
+.footer-cols-a:hover{
+    color: #666;
+}
+.footer-cols-img{
+    height: 130px;
+    width: 200px;
+}
+.footer-cols-ul{
+    list-style-type: none;
+}
+.footer-cols-logo{
+    font-size: larger;
+    font-weight: 100px;
+}
+.footer-end-text {
+    text-align: center;
+}
+.footer-end-image{
+    margin-left: auto;
+    margin-right: auto;
+    width: 29%;
+    margin-bottom: 10px;    
+}
+.button{
+    display: block;
+    width: 22%;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #09c;
+    border-radius: 40px;
+    text-transform: uppercase;
+    padding: 22px 30px;
+    font-size: 1.25rem;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+}
+.button:hover{
+    background-color:#eef2f5;
+}
+.students-news-button{
+    display: block;
+    width: 12%;
+    margin: 0 auto;
+    background-color:  #09c;
+    color: #fff;
+    border-radius: 40px;
+    text-transform: uppercase;
+    padding: 22px 30px;
+    font-size: 1.25rem;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 4%;
+}
+.students-news-button:hover{
+    background-color: rgb(2, 141, 187);
+}
+.h2-header{
+    color: #fefefe;
+    text-align: center;
+    font-size: 4rem;
+    line-height: 5rem;
+    padding-bottom: 3rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-style: normal;
+    font-weight: bolder;
+    text-rendering: optimizeLegibility;
+}
+.scholarship-link{
+    background-color: #09c;
+    padding: 4rem 1rem;
+}
+.students-news{
+    background-color:white;
+    display: flex;
+}
+.students-news-heading{
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 3%;
+    font-size:3rem;
+}
+/* .students-news-section1{
+    background-color:#a2a9ac;
+    margin-top: 20px;
+    margin-left: 17%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    height: 400px;
+}
+.students-news-section2{
+    background-color:#a2a9ac;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    height: 400px;
+}
+.students-news-section3{
+    background-color:#a2a9ac;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 17%;
+    height: 400px;
+}
+ */
+
+ .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 5%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+  .card:first-child{
+    margin-left: 10%;
+    margin-right: 2%;
+    width: 50%;
+  }
+  .card:last-child{
+    margin-right: 10%;
+    margin-left: 2%;
+  }
+
+.students-img{
+    height: 260px;
+    background-size: cover;
+    background-position: 50% 20%;
+    border-radius: 1rem;
+}
+/* .scholarship-winners-text{
+    margin: 1.5rem 0;
+}
+.scholarship-winners-area{
+    color: #000;
+    font-weight: 700;
+}
+.scholarship-winners-rs{
+    color: #000;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.scholarship-winners-section:last-child{
+    margin-right: 2%;
+    margin-right: 3%;
+} */
+
+.card-news {
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    transition: 0.3s;
+    width: 40%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 2%;
+  }
+  .students-news-p{
+    text-align: center;
+    color: #666;
+    padding-top: 5%;
+  }
+  .students-news-header{
+    text-align: center;
+    font-size: 3rem;
+    color: #031116;
+  }
+  .students-color{
+    background-color:#eef2f5;
+  }
+
+  .card-news:first-child{
+    margin-left: 10%;
+    margin-right: 2%;
+  }
+  .card-news:last-child{
+    margin-right: 10%;
+    margin-left: 2%;
+  }
+/* phone  */
+  @media (max-width:480px) {
+    .footer {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    }
+    .main-footer{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+  
+    
+  }
+  
+  /*low resolution tablet and ipad*/
+  @media (min-width:481px) and (max-width:768px) {
+    .footer {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    }
+    .main-footer{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+  
+  }
+  
+  /*portrait mode tablet and ipad*/
+  @media (min-width:768px) and (max-width:1024px) {
+   
+  
+  }
