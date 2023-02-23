@@ -59,10 +59,9 @@ body{
 .AM-login_signup{
     display: flex;
     background-color: gainsboro;
-    /* align-content: center; */
 }
 
-.AM-login_signup a{
+.AM-login_signup div{
     width: 100%;
 }
 
@@ -81,17 +80,19 @@ a:hover .AM-signup{
     font-weight: 600;
 }
 
-.AM-active{
+.AM_active{
     background-color: #fff;
     color: #00334c;
 }
 
 .signup-form{
-    /* display: none; */
     width: 568px;
-    /* height: 336px; */
     padding: 16px;
 } 
+
+.hide{
+    display: none;
+}
 
 .signupform2{
     width: 568px;

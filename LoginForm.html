@@ -29,11 +29,11 @@
         crossorigin="anonymous"></script>    
         <link rel="stylesheet" href="header.css">    
         <link rel="stylesheet" href="login.css">    
-        <link rel="stylesheet" href="footer.css">    
-
+        <link rel="stylesheet" href="footer.css">   
+        
     </head>
     <body>
-
+        
         <!-- header -->
         <header>  
             <nav class="navbar navbar-expand-lg  navbar-light bg-light">
@@ -46,7 +46,7 @@
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                    
+                        
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Scholarship
@@ -67,13 +67,13 @@
                                 Fafsa & Financial Aid
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/career-planning">FAFSA</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/career-planning/featured-internships">Financial Aid</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/part-time-jobs">FAFSA &amp; Financial Aid News</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/career-planning/articles">National Scholarship Directory</a>
+                                <a class="dropdown-item" href="/career-planning">FAFSA</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/career-planning/featured-internships">Financial Aid</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/part-time-jobs">FAFSA &amp; Financial Aid News</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/career-planning/articles">National Scholarship Directory</a>
                             </div>
                         </li>   
                         <!-- ========================================================================= -->
@@ -82,7 +82,7 @@
                                 Internships
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/career-planning">Find Internships</a>
+                                <a class="dropdown-item" href="/career-planning">Find Internships</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="/career-planning/featured-internships">Featured Internships</a>
                             <div class="dropdown-divider"></div>
@@ -91,7 +91,7 @@
                             <a class="dropdown-item" href="/career-planning/articles">Internship News</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="/career-planning/articles"> Online Learning</a>
-                            </div>
+                        </div>
                         </li>
                         <!-- ============================================================================== -->
                         <li class="nav-item dropdown">
@@ -108,7 +108,7 @@
                                 <a class="dropdown-item" href="/career-planning/articles">Scholarship Providers</a>
                             </div>
                         </li>
-            
+                        
                         <!-- ======================================================================== -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -124,22 +124,22 @@
                                 <a class="dropdown-item" href="/career-planning/articles">Scholarship Providers</a>
                             </div>
                         </li>
-
+                        
                     </ul>
                     <!-- ====================================================================== -->
                     <ul  class='menu m1-2 flex'> 
                         <li class='nav-item show-for-medium'>
                             <a class="login-link" target="_blank" href="./LoginForm.html">log in</a>
                         </li>  
-                            <button class="btn my-2 my-sm-0" type="submit"><a href="./registration.html">Sign up</a> </button>
+                        <button class="btn my-2 my-sm-0" type="submit"><a href="./registration.html">Sign up</a> </button>
                     </ul>
                 </div>
             </nav>
         </header>
-
-
- <!-- Anita -->
- <!-- login form -->
+        
+        
+        <!-- Anita -->
+        <!-- login form -->
         <section id="ANITA_LOGIN">
             <div class="AM-advertise">
                 <img id="advertisement-img" src="./images/ad_small.jpg" alt="adver-tisement">
@@ -150,10 +150,12 @@
                 </div>
                 <div class="AM-loginForm">
                     <div class="AM-login_signup">
-                        <a href="./SignupForm.html"><div class="AM-signup">Sign up </div></a>
-                        <a href=""><div class="AM-signup AM-active">Login</div></a>
+                        <div id ="signUp" onClick="onSignupClick()" class="AM-signup AM_active">Sign up </div>
+                        <div id="login" onClick="onLoginClick()" class="AM-signup ">Login</div>
                     </div>
-                    <div class="login-form">
+                    
+                    
+                    <div class="login-form hide">
                         <h3>Log in to E-Scholify</h3>
                         <form>
                             <input type="text" name="email-login" placeholder="Email Address" class="loginemail" required>
@@ -170,21 +172,69 @@
                             </div>
                         </form>
                     </div>
+                    
+                    <div class="signup-form ">
+                        <form>
+                            <div class="signupform2">
+                                <fieldset class="AM-fieldset">
+                                    <legend class="AM-formlabel">I am a:</legend>
+                                    <span class="AM-radio-block">
+                                        <input type="radio" id="userstatusid1" name="user-statusid1" required>
+                                        <label class="studentA" for="userstatusid1">Student</label>
+                                    </span>
+                                    <span class="AM-radio-block">
+                                        <input type="radio" id="userstatusid2" name="user-statusid1" required>
+                                        <label class="parentA" for="userstatusid2">Parent of a student</label>
+                                    </span>
+                                </fieldset>
+                                <span class="invisible" id="parent-instructions" role="tooltip">Parents: Complete the questions using your child's information</span>
+                            </div>
+                            <div class="grade-zipcontainer">
+                                <select class="gradelevel">
+                                    <option>High School Sophomore</option>
+                                    <option>High School Junior</option>
+                                    <option selected="selected">High School Senior</option>
+                                    <option>College Freshman</option>
+                                    <option>College Sophomore</option>
+                                    <option>College Junior</option>
+                                    <option>College Senior</option>
+                                    <option>Graduate School - Year 1</option>
+                                    <option>Graduate Student - Year 2</option>
+                                    <option>Graduate Student - Year 3</option>
+                                    <option>Graduate Student - Year 4</option>
+                                </select>
+                                <input type="text" class="zip-code" placeholder="Zip Code" name="zipcode" required>  
+                                <span class='form-error' role='alert'>Please select a grade level</span>                        
+                            </div>
+                            <div class="joinbutton">
+                                <input type="submit" name="commit" value="Join for free" class="button" id="join-button">
+                                <p class="helptext" id="term-conditions">
+                                    By clicking the button above, I agreed to the 
+                                    <a target="_blank" href="/terms">Terms & Conditions</a>
+                                    and
+                                    <a target="_blank" href="/privacy">Privacy Policy</a>.
+                                </p>
+                            </div>
+                        </form>     
+                    </div>
+
+                   
                 </div>
             </div>
         </section>
         
         <!-- footer -->
-
-        <footer >      
         
+        
+        <footer >      
+            
             <div class="main-footer">
                 <!-- <div></div> -->
                 <div class="main-footer-items">
-                        <img class="main-footer-image" src="./images/african-american.png">                    
-                        <div class="main-footer-article">SCHOLARSHIP</div>
-                        <h3 class="main-footer-heading">College Scholarships for African American Students</h3>
-                        <p class="main-footer-para">These scholarships for Black students total more than $450,000!</p>
+                    <img class="main-footer-image" src="./images/african-american.png">                    
+                    <div class="main-footer-article">SCHOLARSHIP</div>
+                    <h3 class="main-footer-heading">College Scholarships for African American Students</h3>
+                    <p class="main-footer-para">These scholarships for Black students total more than $450,000!</p>
                                     
                 </div>
                 <div class="main-footer-items">
@@ -338,7 +388,7 @@
                 
             </div>
         </footer>
-
+        <script src="./loginForm.js"></script> 
        
     </body>
 </html>
